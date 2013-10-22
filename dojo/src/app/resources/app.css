@@ -1,0 +1,9 @@
+@import '../../dojox/mobile/themes/custom/custom.css';
+
+body {
+  visibility: hidden;
+}
+
+.mblView {
+  height: 100%;
+}
