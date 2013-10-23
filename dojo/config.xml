@@ -7,11 +7,11 @@
     <name>PropertyCross</name>
 
     <description>
-        Part of the PropertyCross project, the Kendo UI implementation.
+        Part of the PropertyCross project, the Dojo Mobile Toolkit implementation.
     </description>
 
     <author href="http://propertycross.com">
-        Joel Smith
+        Stuart Frost
     </author>
 
     <feature name="http://api.phonegap.com/1.0/geolocation" />
