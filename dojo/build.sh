@@ -103,11 +103,11 @@ perl -pe "
   s/\s+/ /g;                                 # Collapse white-space" > "$DISTDIR/index.html"
 
 # Remove useless framework files
-find ${DISTDIR}/dojo -mindepth 1 -type d -exec rm -rf {} +
-find ${DISTDIR}/dojo -type f ! -name dojo.js -exec rm -f {} +
-find ${DISTDIR}/app -name *.js.uncompressed.js -exec rm -f {} +
-find ${DISTDIR}/app -name *.js.map -exec rm -f {} +
-find ${DISTDIR}/app -name *.js.consoleStripped.js -exec rm -f {} +
+find ${DISTDIR}/dojo -mindepth 1 -type d | xargs rm -rf
+find ${DISTDIR}/dojo -type f ! -name dojo.js | xargs rm -rf
+find ${DISTDIR}/app -name *.js.uncompressed.js | xargs rm -rf
+find ${DISTDIR}/app -name *.js.map | xargs rm -rf
+find ${DISTDIR}/app -name *.js.consoleStripped.js | xargs rm -rf
 
 rm -rf "${DISTDIR}/dojox"
 rm -rf "${DISTDIR}/dijit"
