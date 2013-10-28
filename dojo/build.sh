@@ -112,4 +112,9 @@ find ${DISTDIR}/app -name *.js.consoleStripped.js | xargs rm -rf
 rm -rf "${DISTDIR}/dojox"
 rm -rf "${DISTDIR}/dijit"
 rm -f "${DISTDIR}/build-report.txt"
+
+# Copy back deviceTheme.js
+mkdir -p "${DISTDIR}/dojox/mobile" && cp "${SRCDIR}/dojox/mobile/deviceTheme.js" "${DISTDIR}/dojox/mobile/deviceTheme.js"
+cp "${SRCDIR}/config.xml" "${DISTDIR}"
+
 echo "Build complete"

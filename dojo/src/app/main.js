@@ -21,7 +21,6 @@ define([ 'dojo/has', 'require' ], function (has, require) {
 
 		require([ 'dojo/parser', 'dojox/mobile', 'dojo/domReady!' ], function (parser, dojoMobile,domReady) {
 				parser.parse();
-				alert("hello");
 		});
 	}
 );
